@@ -22,3 +22,25 @@ git branch -d branch_name #to delete a branch
 ssh-keygen -o
 git remote add origin git@github.com:user_name/repo_name.git
 git push -u origin main #-u represents upstream branch
+gh repo create <<repo_name>> --public --source=. --push
+git remote -v
+#Tagging
+git tag is used to mark specific points of the repository as important. These points can be milestones, versions and releases.
+Two types of tagging is available
+Annotated Tags - where details of the author etc metadata will be stored
+Lightweight Tags - only tag will be created
+Tags are static in nature, once created they stick to that commit itself and doesn't move forward
+
+To check list of Tags
+git tag
+
+To create tag - annotated
+git tag -a <tag_name> -m "Tag message"
+git show 
+git tag -d <tag_name>
+
+Create tag for a specific commit 
+git tag -a <tag_name> <commit_sha> -m "tag message"
+
+To push tags to remote
+git push origin <tag_name> 
