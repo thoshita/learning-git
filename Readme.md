@@ -36,7 +36,7 @@ git tag
 
 To create tag - annotated
 git tag -a <tag_name> -m "Tag message"
-git show 
+git show <tag_name> 
 git tag -d <tag_name>
 
 Create tag for a specific commit 
