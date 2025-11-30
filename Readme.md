@@ -59,8 +59,10 @@ git checkout <branch_name>
  
 git pull origin <from_branch_name>  
 git merge <from_branch_name>  
+git rebase <from_branch_name> #maintains linear commit history  
+git reset --hard <commit_id>   
+git revert <commit_id> #maintains commit history  
 
-git reset --hard <commit_id>  
 
 
 ```
